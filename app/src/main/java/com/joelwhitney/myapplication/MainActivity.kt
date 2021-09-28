@@ -1,14 +1,8 @@
 package com.joelwhitney.myapplication
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
-import android.view.MenuItem
 import com.joelwhitney.myapplication.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
         menu.getItem(0).isEnabled = false
+        menu.getItem(0).contentDescription = "disabled_menu_item"
+        menu.getItem(1).contentDescription = "enabled_menu_item"
         return true
     }
 }

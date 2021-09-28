@@ -2,10 +2,8 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/disabled_menu_item"
-        android:contentDescription="disabled_menu_item"
         android:title="Disabled" />
     <item
         android:id="@+id/enabled_menu_item"
-        android:contentDescription="enabled_menu_item"
         android:title="Enabled" />
 </menu>
